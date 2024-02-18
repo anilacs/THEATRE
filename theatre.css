@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5rem;
+    box-sizing:border-box;
+    transition: .2s linear;
+    text-decoration: none;
+   }
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+
+#navul{
+  font-style: italic;
+}
+.navbar-brand{
+  font-size: 4rem;
+  color: rgb(92, 89, 95);
+}
+#hom{
+  margin-top:-150;
+  text-align: center;
+  font-size: 5.5rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#paragrap{
+  padding: 10px;
+}
+#aboutus{
+  text-align: center;
+}
+.item{
+  height: 550px;
+}
+
+/* gallery */
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1250px;
+  margin: 50px auto;
+  padding: 20px;
+  gap: 20px;
+}
+#pack{
+  text-align: center;
+  margin-top: 130px;
+}
+#gal{
+  text-align: center;
+  font-weight: bold;
+  
+}
+#package{
+  background-image: url(https://media.istockphoto.com/id/1467934174/photo/film-reel-cinema-or-photography-35mm-film-strip-tape-3d-illustration-isolated-on-the-white.webp?b=1&s=170667a&w=0&k=20&c=jfL-Qo7xDMFShvLTrmg3yEurE5p5q_6GNXp37k-LqgI=);
+  background-size: cover;
+}
+.card-list .card-item {
+  background: #fff;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+  border: 2px solid #000;
+}
+.card-list .card-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.card-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+.card-list .developer {
+  background-color: #F7DFF5; 
+  color: #B22485;
+}   
+.card-list .designer {
+  background-color: #d1e8ff;
+  color: #2968a8;
+}
+.card-list .editor {
+  background-color: #d6f8d6; 
+  color: #205c20;
+}
+.card-item h3 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+}
+.card-item .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 30px;
+  transition: 0.2s ease;
+}
+.card-list .card-item:hover .arrow  {
+  background: #000;
+  color: #fff; 
+}
+@media (max-width: 1200px) {
+  .card-list .card-item {
+      padding: 0px;
+      align-items: center;
+  }
+}
+@media screen and (max-width: 980px) {
+  .card-list {
+      margin: 0 auto;
+      align-items: center;
+      padding: 0px;
+    }
+  .line{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ 
+}
+/* about */
+@media screen and (max-width: 500px) {
+
+#paragrap{
+  font-size: 4rem;
+  padding: 10px;
+  align-items: center;
+}
+
+}
+#paragaa{
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+/* footer */
+#conta{
+  margin: 8%;
+  background-color: rgb(244, 248, 248);
+ 
+}
+
+.MainHead{
+  text-align: center;
+}
+
+.SubHead{
+  text-align: center;
+  font-size: 2rem;
+}
+.icon-collection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  flex-wrap: nowrap;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+ 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  flex-wrap: nowrap;
+}
+.icon:hover{
+  background-image: linear-gradient(to bottom right,white,yellow,orange,red,blue);
+}
+.brand{
+  color: black;
+  font-size: 30px;
+}
+/* animations */
+.icon:hover .brand{
+  color: #ffffff;
+  animation: rotate 2s;
+}
+@keyframes rotate{
+0%{
+  transform:rotate(30deg);
+}
+20%{
+  transform:rotate(30deg);
+}
+40%{
+  transform:rotate(30deg);
+}
+80%{
+  transform:rotate(30deg);
+}
+100%{
+  transform:rotate(30deg);
+}
+}
+#copyright{
+  font-weight: 500;
+  text-align: center;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 10px;
+}
+#lorem{
+  padding: 35px;
+  font-size: 2.2rem;
+}
+@media(max-width:650px){
+  iframe{
+    width: 600px;
+    align-items: center;
+  }
+}
+
+
+  
+
+@media(max-width:650px){
+  .icon-collection{
+   
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    flex-wrap:wrap;
+  }
+  .icon{
+    width: 20px;
+    height: 45px;
+    /* border: solid 1px; */
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    flex-wrap: wrap;
+  }
+ 
+}
+body {
+  font-size: 62.5%;
+}
+footer{
+  background-color: rgb(233, 241, 241);
+}
+#home{
+  background-color: white;
+}
+.container1{
+  background-color: white;
+}
+
+/* carouse */
+#caro{
+  width: 400px;
+  height: 650px;
+}
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition: 
+               transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+               $carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
